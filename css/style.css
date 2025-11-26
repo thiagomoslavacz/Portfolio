@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-color);
+  color: #0e1419;
+}
+
+:root {
+  --main-color: #0e1419;
+  --secondary-color: #75e1e6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 10rem;
+
+  .name {
+    h3 {
+      font-weight: 200;
+    }
+
+    p {
+      font-weight: bold;
+
+      span {
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  nav ul {
+    display: flex;
+    gap: 3rem;
+
+    a {
+      position: relative;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background: #8be9fd;
+        transform: translateX(-50%);
+        transition: 0.3s ease;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+main {
+  margin-block: 3.5rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+
+  .logo {
+    img {
+      vertical-align: bottom;
+      border-radius: 0 2rem 2rem 2rem;
+      border: 5px double var(--secondary-color);
+      width: 400px;
+      transition: border 0.3s ease;
+      box-shadow: 2px 2px 5px rgb(117, 224, 230, 0.5);
+
+      &:hover {
+        border: 5px double #404069;
+      }
+    }
+  }
+
+  .content {
+    .title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      line-height: 3.5rem;
+
+      h1 {
+        font-weight: 600;
+
+        span {
+          color: var(--secondary-color);
+        }
+      }
+
+      p {
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, #a2a5c5, #404069);
+        color: transparent;
+        font-weight: bold;
+      }
+    }
+
+    .icons {
+      ul {
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        li {
+          transition: all 0.5s ease;
+          &:hover {
+            transform: translateY(-5px);
+          }
+          &:hover.html {
+            color: #f36518;
+          }
+          &:hover.css {
+            color: #264de4;
+          }
+          &:hover.js {
+            color: #ffd708;
+          }
+          &:hover.figma {
+            color: #3ae880;
+          }
+          &:hover.github {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.scroll {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #0e1419;
+  border-top: 5px double var(--secondary-color);
+}
