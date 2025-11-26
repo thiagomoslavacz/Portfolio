@@ -3,6 +3,7 @@
   padding: 0;
   outline: none;
   list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -12,12 +13,13 @@ body {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   background-color: var(--main-color);
-  color: #0e1419;
+  color: #fff;
 }
 
 :root {
   --main-color: #0e1419;
   --secondary-color: #75e1e6;
+  --complementary-color: #404069;
 }
 
 header {
@@ -48,8 +50,11 @@ header {
       position: relative;
       color: #fff;
       font-weight: 600;
-      text-decoration: none;
       transition: color 0.3s ease;
+
+      &.first {
+        color: var(--secondary-color);
+      }
 
       &::before {
         content: "";
@@ -84,7 +89,7 @@ main {
       border: 5px double var(--secondary-color);
       width: 400px;
       transition: border 0.3s ease;
-      box-shadow: 2px 2px 5px rgb(117, 224, 230, 0.5);
+      box-shadow: 2px 2px 5px #75e0e682;
 
       &:hover {
         border: 5px double #404069;
@@ -94,9 +99,9 @@ main {
 
   .content {
     .title {
+      font-family: "Englebert";
       font-size: 1.8rem;
       margin-bottom: 1rem;
-      line-height: 3.5rem;
 
       h1 {
         font-weight: 600;
@@ -116,6 +121,7 @@ main {
 
     .icons {
       ul {
+        margin-bottom: 3rem;
         font-size: 1.8rem;
         display: flex;
         align-items: center;
@@ -123,25 +129,45 @@ main {
 
         li {
           transition: all 0.5s ease;
+
+          &.html {
+            color: #f36518;
+          }
+          &.css {
+            color: #264de4;
+          }
+          &.js {
+            color: #ffd708;
+          }
+          &.figma {
+            color: #3ae880;
+          }
+
           &:hover {
             transform: translateY(-5px);
           }
-          &:hover.html {
-            color: #f36518;
-          }
-          &:hover.css {
-            color: #264de4;
-          }
-          &:hover.js {
-            color: #ffd708;
-          }
-          &:hover.figma {
-            color: #3ae880;
-          }
-          &:hover.github {
-            opacity: 0.5;
-          }
         }
+      }
+    }
+
+    a.action {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #75e1e6;
+      color: black;
+      box-shadow: 2px 2px 5px var(--complementary-color);
+      padding-block: 15px;
+      font-size: 1rem;
+      font-weight: 600;
+      gap: 0.5rem;
+      border-radius: 1rem;
+      transition: all 0.5s ease;
+
+      &:hover {
+        opacity: 0.75;
+        transform: scale(1.05);
       }
     }
   }
@@ -150,6 +176,5 @@ main {
 .scroll {
   width: 80%;
   margin: 0 auto;
-  background-color: #0e1419;
   border-top: 5px double var(--secondary-color);
 }
