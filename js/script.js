@@ -1,13 +1,16 @@
 console.log("Hello World!");
 
-/*
 new Typed("#typed", {
-  strings: ["Thiago Moslavacz"],
+  strings: [
+    "build stuff!",
+    "craft ideas!",
+    "break the pattern!",
+    "forget to sleep...",
+  ],
   typeSpeed: 50,
-  backSpeed: 30,
+  backSpeed: 40,
   loop: true,
 });
-*/
 
 const icons = document.querySelectorAll(".icon-wrapper");
 const pages = document.querySelectorAll(".page");

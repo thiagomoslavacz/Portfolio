@@ -112,6 +112,7 @@ nav#sidebar {
     color: black;
     border-radius: 50%;
     font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.5s ease;
 
