@@ -30,53 +30,53 @@
     <title>Portfolio-Thiago-Moslavacz</title>
   </head>
   <body>
-    <header>
-      <div class="name">
-        <p>Dev <span>/</span></p>
-        <h3>Thiago Lima Moslavacz</h3>
+    <div class="bio">
+      <span>Dev <span>/</span></span>
+      <p class="name">Thiago Moslavacz</p>
+    </div>
+
+    <nav id="sidebar">
+      <div class="icon-wrapper selected" data-section="home">
+        <i class="bxr bx-home"></i>
+        <span class="tooltip">Home</span>
       </div>
-      <nav>
-        <ul>
-          <a class="first" href="#about"><li>About</li></a>
-          <a href="#experience"><li>Experience</li></a>
-          <a href="#projects"><li>Projects</li></a>
-          <a href="#contact"><li>Contact</li></a>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <div class="logo">
-        <img src="assets/images/hero-photo.jpg" alt="Notebook HTML Code" />
+      <div class="icon-wrapper" data-section="projects">
+        <i class="bxr bx-dashboard"></i>
+        <span class="tooltip">Projects</span>
       </div>
-      <div class="content">
-        <div class="title">
-          <h1>Hey, I'm Thiago<span>.</span></h1>
-          <p>I develop websites</p>
-        </div>
-        <div class="icons">
-          <ul>
-            <li class="html"><i class="ri-html5-fill"></i></li>
-            <li class="css"><i class="ri-css3-fill"></i></li>
-            <li class="js"><i class="ri-javascript-fill"></i></li>
-            <li class="figma"><i class="ri-figma-fill"></i></li>
-            <li class="github"><i class="ri-github-fill"></i></li>
-          </ul>
-        </div>
-        <a
-          href="https://wa.me/5511991085388?text=Hey There!%20I%20came%20from%20your%20website."
-          class="action"
-          target="_blank"
-        >
-          <i class="bx bx-message-circle"></i> <span>/</span> Get in Touch</a
-        >
+      <div class="icon-wrapper" data-section="skills">
+        <i class="bxr bx-hot"></i>
+        <span class="tooltip">Skills</span>
       </div>
-    </main>
+      <div class="icon-wrapper" data-section="contact">
+        <i class="bxr bx-envelope"></i>
+        <span class="tooltip">Contact</span>
+      </div>
+    </nav>
 
-    <div class="scroll"></div>
+    <section id="hero">
+      <section class="page home active"></section>
+      <section class="page projects"></section>
+      <section class="page skills"></section>
+      <section class="page contact"></section>
+    </section>
 
-    <section class="about"></section>
-
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
+
+<!--
+<div class="icons">
+  <ul>
+    <li class="html"><i class="ri-html5-fill"></i></li>
+    <li class="css"><i class="ri-css3-fill"></i></li>
+    <li class="js"><i class="ri-javascript-fill"></i></li>
+    <li class="figma">
+      <img src="assets/images/figma-logo.png" alt="Figma Logo" 
+    </li>
+    <li class="github"><i class="ri-github-fill"></i></li>
+  </ul>
+</div>
+
+-->
