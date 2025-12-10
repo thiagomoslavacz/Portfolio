@@ -62,7 +62,7 @@ nav#sidebar {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 0.5rem;
   z-index: 1;
   background-color: var(--coffee-color);
@@ -81,7 +81,7 @@ nav#sidebar {
     background-color: #e5d3b3;
     color: black;
     border-radius: 50%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: background-color 0.5s ease;
 
@@ -119,6 +119,36 @@ nav#sidebar {
   }
 }
 
+.wrapper {
+  font-family: "Englebert", sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--white-color);
+
+  img {
+    width: 30px;
+    transition: transform 0.3s ease;
+  }
+
+  span {
+    transition: color 0.3s ease;
+  }
+
+  &:hover span {
+    color: var(--caramel-color);
+  }
+
+  &:hover img {
+    transform: rotate(15deg) translateY(-10px);
+  }
+}
+
 section#hero {
   margin-left: 25%;
   height: 100vh;
@@ -130,10 +160,33 @@ section#hero {
     opacity: 0;
     animation: fadeIn 0.5s ease-out;
 
+    h1 {
+      position: absolute;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 4rem 0 0 3rem;
+
+      span {
+        color: var(--caramel-color);
+      }
+    }
+
     &.active {
       display: block;
       opacity: 1;
     }
+  }
+
+  .home {
+  }
+
+  .projects {
+  }
+
+  .skills {
+  }
+
+  .contact {
   }
 }
 

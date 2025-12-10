@@ -2,7 +2,7 @@ console.log("Hello World!");
 
 /*
 new Typed("#typed", {
-  strings: ["I develop websites.", "And games too", "Passionate for coffee"],
+  strings: ["Thiago Moslavacz"],
   typeSpeed: 50,
   backSpeed: 30,
   loop: true,
