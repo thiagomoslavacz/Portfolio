@@ -30,3 +30,8 @@ icons.forEach((icon) => {
     });
   });
 });
+
+document.querySelector(".projects-link").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector('[data-section="projects"]').click();
+});
