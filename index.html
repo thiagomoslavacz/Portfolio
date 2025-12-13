@@ -30,54 +30,176 @@
     <title>Portfolio-Thiago-Moslavacz</title>
   </head>
   <body>
-    <div class="bio">
-      <span>Dev <span>/</span></span>
-      <p class="name">Thiago Moslavacz</p>
-      <div class="status">
-        <span class="dot"></span>
-        <p>Online</p>
+    <div class="left-window">
+      <div class="bio">
+        <span>Dev <span>/</span></span>
+        <p class="name">Thiago Moslavacz</p>
+        <div class="status">
+          <span class="dot"></span>
+          <p>Online</p>
+        </div>
       </div>
-    </div>
 
-    <nav id="sidebar">
-      <div class="icon-wrapper selected" data-section="home">
-        <i class="bxr bx-home"></i>
-        <span class="tooltip">Home</span>
-      </div>
-      <div class="icon-wrapper" data-section="projects">
-        <i class="bxr bx-dashboard"></i>
-        <span class="tooltip">Projects</span>
-      </div>
-      <div class="icon-wrapper" data-section="skills">
-        <i class="bxr bx-hot"></i>
-        <span class="tooltip">Skills</span>
-      </div>
-      <div class="icon-wrapper" data-section="contact">
-        <i class="bxr bx-envelope"></i>
-        <span class="tooltip">Contact</span>
-      </div>
-    </nav>
+      <nav id="sidebar">
+        <div class="icon-wrapper selected" data-section="home">
+          <i class="bxr bx-home"></i>
+          <span class="tooltip">Home</span>
+        </div>
+        <div class="icon-wrapper" data-section="projects">
+          <i class="bxr bx-dashboard"></i>
+          <span class="tooltip">Projects</span>
+        </div>
+        <div class="icon-wrapper" data-section="skills">
+          <i class="bxr bx-hot"></i>
+          <span class="tooltip">Skills</span>
+        </div>
+        <div class="icon-wrapper" data-section="contact">
+          <i class="bxr bx-envelope"></i>
+          <span class="tooltip">Contact</span>
+        </div>
+      </nav>
 
-    <div class="wrapper">
-      <p><span>Coffee</span> Break?</p>
-      <img src="assets/images/latte-icon.png" alt="Latte Icon" />
+      <div class="wrapper">
+        <p><span>Coffee</span> Break?</p>
+        <img src="assets/images/latte-icon.png" alt="Latte Icon" />
+      </div>
     </div>
 
     <section id="hero">
       <section class="page home active">
-        <h1>
-          Yes, I <span>code</span> and <span id="typed"></span> <br />
-          No, I'm not fixing your printer.
-        </h1>
+        <div class="top-container">
+          <h1>
+            Yes, I <span>code</span> and <span id="typed"></span> <br />
+            No, I'm not fixing your printer.
+          </h1>
+          <a href="#" class="action-btn"
+            >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
+          ></a>
+        </div>
+        <div class="grid-layout">
+          <div class="deco-cpx"></div>
+
+          <div class="col-left">
+            <div class="data-wrapper">
+              <div class="card data-01">
+                <span>5+</span>
+                <p>Completed Projects</p>
+              </div>
+              <div class="card data-02">
+                <div class="time">
+                  <span>2</span>
+                  <span>Years</span>
+                </div>
+                <p>Studying and practicing</p>
+              </div>
+            </div>
+
+            <div class="card projects-act">
+              <div class="text">
+                <h2><span>Featured</span> Projects</h2>
+                <a href="#" class="action-btn projects-link"
+                  >View All <i class="bxr bx-chevron-right"></i>
+                </a>
+              </div>
+              <a
+                href="https://thiagomoslavacz.github.io/projects/projeto-restaurant"
+                target="_blank"
+                rel="noopener"
+                class="project-preview"
+              >
+                <img
+                  src="assets/images/restaurant-01.png"
+                  alt="Restaurant Website Project"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-right">
+            <div class="card about">
+              <h2>A little about Who I Am ツ</h2>
+              <p>
+                Hey! I like the process: breaking, building, testing, adjusting.
+                No motivational lines, just solid work. Among so many, why pick
+                <span>me?</span> Who knows. There's only one way to find out.
+              </p>
+              <div class="col-bottom">
+                <a href="#" class="action-btn"
+                  >Get in Touch
+                  <i class="bxr bx-arrow-out-up-left-stroke-square"></i>
+                </a>
+                <ul class="icons">
+                  <li class="html"><i class="ri-html5-fill"></i></li>
+                  <li class="css"><i class="ri-css3-fill"></i></li>
+                  <li class="js"><i class="ri-javascript-fill"></i></li>
+                  <li class="figma">
+                    <img src="assets/images/figma-logo.png" alt="Figma Logo" />
+                  </li>
+                  <li class="github"><i class="ri-github-fill"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card timeline">
+              <div class="content">
+                <h2>Timeline / <span>In progress</span></h2>
+                <p>
+                  Academic and professional experiences coming soon. Currently
+                  focused on projects and continuous growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <nav>
+            <a
+              href="https://github.com/thiagomoslavacz"
+              target="_blank"
+              rel="noopener"
+              ><i class="ri-github-fill"></i> GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/thiagomoslavacz"
+              target="_blank"
+              rel="noopener"
+              ><i class="ri-linkedin-box-fill"></i> LinkedIn</a
+            >
+            <a
+              href="mailto:thiagomoslavacz@gmail.com"
+              target="_blank"
+              rel="noopener"
+              ><i class="ri-mail-send-line"></i> Email</a
+            >
+          </nav>
+        </footer>
       </section>
+
       <section class="page projects">
-        <h1>Featured <span>Projects</span></h1>
+        <div class="top-container">
+          <h1>Featured <span>Projects</span></h1>
+          <a href="#" class="action-btn"
+            >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
+          ></a>
+        </div>
       </section>
+
       <section class="page skills">
-        <h1>How <span>I Work</span></h1>
+        <div class="top-container">
+          <h1>How <span>I Work</span></h1>
+          <a href="#" class="action-btn"
+            >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
+          ></a>
+        </div>
       </section>
+
       <section class="page contact">
-        <h1><span>Get in</span> Touch</h1>
+        <div class="top-container">
+          <h1><span>Get in</span> Touch</h1>
+          <a href="#" class="action-btn"
+            >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
+          ></a>
+        </div>
       </section>
     </section>
 
@@ -85,18 +207,3 @@
     <script src="js/script.js" defer></script>
   </body>
 </html>
-
-<!--
-<div class="icons">
-  <ul>
-    <li class="html"><i class="ri-html5-fill"></i></li>
-    <li class="css"><i class="ri-css3-fill"></i></li>
-    <li class="js"><i class="ri-javascript-fill"></i></li>
-    <li class="figma">
-      <img src="assets/images/figma-logo.png" alt="Figma Logo" 
-    </li>
-    <li class="github"><i class="ri-github-fill"></i></li>
-  </ul>
-</div>
-
--->
