@@ -279,9 +279,27 @@ section#hero .home {
     }
 
     .card {
+      position: relative;
       background-color: #090909;
       border-radius: 10px;
       height: 100%;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 3px;
+        background-color: var(--coffee-color);
+        transition: width 0.5s ease;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
     }
 
     .col-left,
@@ -458,6 +476,63 @@ section#hero .home {
 }
 
 section#hero .projects {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+    .project-card {
+      background-color: #090909;
+      color: white;
+      border-radius: 15px;
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 20px 40px rgba(59, 47, 47, 0.5);
+      }
+
+      .img-container {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+          border-radius: 15px 15px 0 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .content {
+        padding: 1.5rem;
+
+        h2 {
+          font-weight: 300;
+          margin-bottom: 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          span:nth-child(1) {
+            font-weight: 500;
+            color: var(--caramel-color);
+          }
+
+          i {
+            color: #a0a0a0;
+            transition: color 0.3 ease;
+          }
+        }
+
+        p {
+          color: #a0a0a0;
+        }
+      }
+    }
+  }
 }
 
 section#hero .skills {

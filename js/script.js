@@ -1,6 +1,6 @@
 console.log("Hello World!");
 
-new Typed("#typed", {
+const typed = new Typed("#typed", {
   strings: [
     "build stuff!",
     "craft ideas!",
@@ -14,24 +14,44 @@ new Typed("#typed", {
 
 const icons = document.querySelectorAll(".icon-wrapper");
 const pages = document.querySelectorAll(".page");
+const validSections = ["home", "projects", "skills", "contact"];
+
+function openPage(target) {
+  if (!validSections.includes(target)) return;
+
+  icons.forEach((i) => i.classList.remove("selected"));
+  pages.forEach((p) => p.classList.remove("active"));
+
+  document
+    .querySelector(`.icon-wrapper[data-section="${target}"]`)
+    ?.classList.add("selected");
+
+  document.querySelector(`.page.${target}`)?.classList.add("active");
+
+  if (location.hash !== `#${target}`) {
+    location.hash = target;
+  }
+
+  target === "home" ? typed.start() : typed.stop();
+}
 
 icons.forEach((icon) => {
   icon.addEventListener("click", () => {
-    icons.forEach((i) => i.classList.remove("selected"));
-    icon.classList.add("selected");
-
-    const target = icon.dataset.section;
-
-    pages.forEach((page) => {
-      page.classList.remove("active");
-      if (page.classList.contains(target)) {
-        page.classList.add("active");
-      }
-    });
+    openPage(icon.dataset.section);
   });
 });
 
-document.querySelector(".projects-link").addEventListener("click", (e) => {
+document.querySelector(".projects-link")?.addEventListener("click", (e) => {
   e.preventDefault();
-  document.querySelector('[data-section="projects"]').click();
+  openPage("projects");
+});
+
+window.addEventListener("load", () => {
+  const hash = location.hash.replace("#", "") || "home";
+  openPage(hash);
+});
+
+window.addEventListener("hashchange", () => {
+  const hash = location.hash.replace("#", "") || "home";
+  openPage(hash);
 });
