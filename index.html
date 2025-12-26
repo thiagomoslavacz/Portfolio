@@ -40,6 +40,25 @@ README /:
     <title>Portfolio-Thiago-Moslavacz</title>
   </head>
   <body>
+    <nav id="sidebar">
+      <div class="icon-wrapper" data-section="home">
+        <i class="bxr bx-home"></i>
+        <span class="tooltip">Home</span>
+      </div>
+      <div class="icon-wrapper" data-section="projects">
+        <i class="bxr bx-dashboard"></i>
+        <span class="tooltip">Projects</span>
+      </div>
+      <div class="icon-wrapper" data-section="skills">
+        <i class="bxr bx-hot"></i>
+        <span class="tooltip">Skills</span>
+      </div>
+      <div class="icon-wrapper" data-section="contact">
+        <i class="bxr bx-envelope"></i>
+        <span class="tooltip">Contact</span>
+      </div>
+    </nav>
+
     <div class="left-window">
       <div class="bio">
         <span>Dev <span>/</span></span>
@@ -49,26 +68,6 @@ README /:
           <p>Online</p>
         </div>
       </div>
-
-      <nav id="sidebar">
-        <div class="icon-wrapper" data-section="home">
-          <i class="bxr bx-home"></i>
-          <span class="tooltip">Home</span>
-        </div>
-        <div class="icon-wrapper" data-section="projects">
-          <i class="bxr bx-dashboard"></i>
-          <span class="tooltip">Projects</span>
-        </div>
-        <div class="icon-wrapper" data-section="skills">
-          <i class="bxr bx-hot"></i>
-          <span class="tooltip">Skills</span>
-        </div>
-        <div class="icon-wrapper" data-section="contact">
-          <i class="bxr bx-envelope"></i>
-          <span class="tooltip">Contact</span>
-        </div>
-      </nav>
-
       <div class="wrapper">
         <p><span>Coffee</span> Break?</p>
         <img src="assets/images/latte-icon.png" alt="Latte Icon" />
@@ -78,10 +77,13 @@ README /:
     <section id="hero">
       <section class="page home active">
         <div class="top-container">
-          <h1>
-            Yes, I <span>code</span> and <span id="typed"></span> <br />
-            No, I'm not fixing your printer.
-          </h1>
+          <div class="title">
+            <h1>
+              <span class="wrapper">Yes, I <span>code</span></span>
+              <span class="wrapper">and <span id="typed"></span></span>
+            </h1>
+            <h2>No, I'm not fixing your printer.</h2>
+          </div>
           <a href="#" class="action-btn"
             >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
           ></a>
@@ -269,6 +271,56 @@ README /:
             >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
           ></a>
         </div>
+
+        <div class="skills-wrapper">
+          <div class="deco-cpx"></div>
+          <ol class="skills-list">
+            <li>
+              <div class="title-wrapper">
+                <p>1 <span>.</span></p>
+                <h2>CSS/SASS</h2>
+              </div>
+              <ul>
+                <li>Responsive Layout</li>
+                <li>CSS Animations</li>
+                <li>Dark UI</li>
+              </ul>
+            </li>
+            <li>
+              <div class="title-wrapper">
+                <p>2 <span>.</span></p>
+                <h2>JavaScript</h2>
+              </div>
+              <ul>
+                <li>DOM Manipulation</li>
+                <li>User Interactions</li>
+                <li>Logic & Conditions</li>
+              </ul>
+            </li>
+            <li>
+              <div class="title-wrapper">
+                <p>3 <span>.</span></p>
+                <h2>HTML</h2>
+              </div>
+              <ul>
+                <li>Semantic Markup</li>
+                <li>SEO-Friendly Structure</li>
+              </ul>
+            </li>
+            <li>
+              <div class="title-wrapper">
+                <p>4 <span>.</span></p>
+                <h2>Tools</h2>
+              </div>
+              <ul>
+                <li>VS Code</li>
+                <li>Git/GitHub</li>
+                <li>Figma</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
         <footer>
           <nav>
             <a
