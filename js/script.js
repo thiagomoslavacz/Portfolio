@@ -25,14 +25,16 @@ function openPage(target) {
   document
     .querySelector(`.icon-wrapper[data-section="${target}"]`)
     ?.classList.add("selected");
+  const page = document.querySelector(`.page.${target}`);
+  page?.classList.add("active");
 
-  document.querySelector(`.page.${target}`)?.classList.add("active");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
   if (location.hash !== `#${target}`) {
     location.hash = target;
   }
 
-  target === "home" ? typed.start() : typed.stop();
+  target === "home" ? typed?.start() : typed?.stop();
 }
 
 icons.forEach((icon) => {
