@@ -1,0 +1,59 @@
+{
+  "sidebar": {
+    "home": "Início",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato"
+  },
+
+  "bio": {
+    "status": "Online"
+  },
+
+  "home": {
+    "titleLine1": "Sim, eu <span>programo</span> e",
+    "subtitle": "Não, eu não vou consertar sua impressora.",
+    "downloadCv": "Baixar CV",
+    "completedProjects": "Projetos Concluídos",
+    "years": "Anos",
+    "studying": "Estudando e praticando",
+    "featuredProjects": "Projetos em Destaque",
+    "view-all": "Ver Todos"
+  },
+
+  "about": {
+    "title": "Um pouco sobre mim ツ",
+    "text": "Ei! Eu gosto do processo: quebrar, construir, testar, ajustar. Sem frases motivacionais, apenas trabalho sólido. Entre tantos, por que escolher <span>eu?</span> Quem sabe. Só existe uma forma de descobrir.",
+    "letsTalk": "Vamos Conversar"
+  },
+
+  "timeline": {
+    "title": "Linha do Tempo",
+    "status": "Em progresso",
+    "text": "Experiências acadêmicas e profissionais em breve. Atualmente focado em projetos e crescimento contínuo."
+  },
+
+  "projects": {
+    "title": "Projetos em <span>Destaque</span>",
+    "carousel": "Landing Pages <span>•</span> Design Responsivo <span>•</span> Polimento Refinado <span>•</span> Código Limpo <span>•</span>",
+    "restaurantDesc": "Site de um restaurante fictício para fins de aprendizado.",
+    "peridoteDesc": "Meu primeiro site profissional, desenvolvido para um cliente.",
+    "g1Desc": "Site do g1 recriado para fins de aprendizado."
+  },
+
+  "skills": {
+    "title": "Como <span>Eu Trabalho</span>",
+    "css": ["Layout Responsivo", "Animações em CSS", "UI tema escuro"],
+    "js": ["Manipulação do DOM", "Interações do Usuário", "Lógica e Condições"],
+    "html": ["Marcação Semântica", "Estrutura amigável para SEO"],
+    "toolsTitle": "Ferramentas",
+    "tools": ["VS Code", "Git/GitHub", "Figma"]
+  },
+
+  "contact": {
+    "title": "<span>Entre em</span> Contato",
+    "letsTalk": "Vamos Conversar",
+    "text": "Tem um <span>projeto em mente</span> ou só quer dizer oi?<br>Estou aberto a freelas, colaborações e novas ideias.",
+    "copyright": "© 2025 Thiago Moslavacz. Todos os direitos reservados."
+  }
+}
