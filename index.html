@@ -9,7 +9,7 @@ README /:
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
@@ -40,22 +40,38 @@ README /:
     <title>Portfolio-Thiago-Moslavacz</title>
   </head>
   <body>
+    <div class="lang-wrapper">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-main" id="langMain">
+          PT-BR
+          <span class="arrow">
+            <i class="bx bx-chevron-down"></i>
+          </span>
+        </button>
+
+        <div class="lang-options">
+          <button class="lang-option" data-lang="en">EN</button>
+          <button class="lang-option" data-lang="pt">PT-BR</button>
+        </div>
+      </div>
+    </div>
+
     <nav id="sidebar">
       <div class="icon-wrapper" data-section="home">
         <i class="bxr bx-home"></i>
-        <span class="tooltip">Home</span>
+        <span class="tooltip" data-i18n="sidebar.home"></span>
       </div>
       <div class="icon-wrapper" data-section="projects">
         <i class="bxr bx-dashboard"></i>
-        <span class="tooltip">Projects</span>
+        <span class="tooltip" data-i18n="sidebar.projects"></span>
       </div>
       <div class="icon-wrapper" data-section="skills">
         <i class="bxr bx-hot"></i>
-        <span class="tooltip">Skills</span>
+        <span class="tooltip" data-i18n="sidebar.skills"></span>
       </div>
       <div class="icon-wrapper" data-section="contact">
         <i class="bxr bx-envelope"></i>
-        <span class="tooltip">Contact</span>
+        <span class="tooltip" data-i18n="sidebar.contact"></span>
       </div>
     </nav>
 
@@ -65,12 +81,8 @@ README /:
         <p class="name">Thiago Moslavacz</p>
         <div class="status">
           <span class="dot"></span>
-          <p>Online</p>
+          <p data-i18n="bio.status"></p>
         </div>
-      </div>
-      <div class="wrapper">
-        <p><span>Coffee</span> Break?</p>
-        <img src="assets/images/latte-icon.png" alt="Latte Icon" />
       </div>
     </div>
 
@@ -79,14 +91,22 @@ README /:
         <div class="top-container">
           <div class="title">
             <h1>
-              <span class="wrapper">Yes, I <span>code</span></span>
-              <span class="wrapper">and <span id="typed"></span></span>
+              <span class="wrapper" data-i18n="home.titleLine1"></span>
+              <span class="wrapper"
+                ><span translate="no" id="typed"></span
+              ></span>
             </h1>
-            <h2>No, I'm not fixing your printer.</h2>
+            <h2 data-i18n="home.subtitle"></h2>
           </div>
-          <a href="#" class="action-btn"
-            >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
-          ></a>
+          <div class="action-btn-wrapper">
+            <a
+              href="assets/doc/Currículo-Thiago-Moslavacz.pdf"
+              download="Currículo-Thiago-Moslavacz"
+              class="action-btn"
+              data-i18n="home.downloadCv"
+            ></a>
+            <i class="bxr bx-arrow-in-right-square-half"></i>
+          </div>
         </div>
         <div class="grid-layout">
           <div class="deco-cpx"></div>
@@ -94,22 +114,27 @@ README /:
             <div class="data-wrapper">
               <div class="card data-01">
                 <span>5+</span>
-                <p>Completed Projects</p>
+                <p data-i18n="home.completedProjects"></p>
               </div>
               <div class="card data-02">
                 <div class="time">
                   <span>2</span>
-                  <span>Years</span>
+                  <span data-i18n="home.years"></span>
                 </div>
-                <p>Studying and practicing</p>
+                <p data-i18n="home.studying"></p>
               </div>
             </div>
             <div class="card projects-act">
               <div class="text">
-                <h2><span>Featured</span> Projects</h2>
-                <a href="#" class="action-btn projects-link"
-                  >View All <i class="bxr bx-chevron-right"></i>
-                </a>
+                <h2 data-i18n="home.featuredProjects"></h2>
+                <div class="view-all-wrapper">
+                  <a
+                    href="#"
+                    class="action-btn projects-link"
+                    data-i18n="home.view-all"
+                  ></a>
+                  <i class="bxr bx-caret-down"></i>
+                </div>
               </div>
               <a
                 href="https://thiagomoslavacz.github.io/projects/projeto-restaurant"
@@ -126,19 +151,17 @@ README /:
           </div>
           <div class="col-right">
             <div class="card about">
-              <h2>A little about Who I Am ツ</h2>
-              <p>
-                Hey! I like the process: breaking, building, testing, adjusting.
-                No motivational lines, just solid work. Among so many, why pick
-                <span>me?</span> Who knows. There's only one way to find out.
-              </p>
+              <h2 data-i18n="about.title"></h2>
+              <p data-i18n="about.text"></p>
               <div class="col-bottom">
                 <a
-                  class="lets-talk"
+                  class="lets-talk-wrapper"
                   href="https://wa.me/5511991085388?text=Hi!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk.%20😉"
                   target="_blank"
                   rel="noopener"
-                  ><i class="bxr bx-paper-plane"></i> Let's Talk
+                >
+                  <i class="bxr bx-paper-plane"></i>
+                  <span class="lets-talk" data-i18n="about.letsTalk"></span>
                 </a>
                 <ul class="icons">
                   <li class="html"><i class="ri-html5-fill"></i></li>
@@ -153,11 +176,11 @@ README /:
             </div>
             <div class="card timeline">
               <div class="content">
-                <h2>Timeline / <span>In progress</span></h2>
-                <p>
-                  Academic and professional experiences coming soon. Currently
-                  focused on projects and continuous growth.
-                </p>
+                <h2>
+                  <span data-i18n="timeline.title"></span> /
+                  <span data-i18n="timeline.status"></span>
+                </h2>
+                <p data-i18n="timeline.text"></p>
               </div>
             </div>
           </div>
@@ -188,24 +211,25 @@ README /:
 
       <section class="page projects">
         <div class="top-container">
-          <h1>Featured <span>Projects</span></h1>
-          <a href="#" class="action-btn"
-            >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
-          ></a>
+          <h1 data-i18n="projects.title"></h1>
+          <div class="action-btn-wrapper">
+            <a
+              href="assets/doc/Currículo-Thiago-Moslavacz"
+              download="Currículo-Thiago-Moslavacz"
+              class="action-btn"
+              data-i18n="home.downloadCv"
+            ></a>
+            <i class="bxr bx-arrow-in-right-square-half"></i>
+          </div>
         </div>
         <div class="info-carousel">
           <div class="track">
-            <p class="info">
-              Landing Pages <span>•</span> Responsive Design
-              <span>•</span> Refined Polishing <span>•</span> Clean Code
-              <span>•</span>
-            </p>
-
-            <p class="info" aria-hidden="true">
-              Landing Pages <span>•</span> Responsive Design
-              <span>•</span> Refined Polishing <span>•</span> Clean Code
-              <span>•</span>
-            </p>
+            <p class="info" data-i18n="projects.carousel"></p>
+            <p
+              class="info"
+              aria-hidden="true"
+              data-i18n="projects.carousel"
+            ></p>
           </div>
         </div>
 
@@ -223,8 +247,8 @@ README /:
               />
             </div>
             <div class="content">
-              <h2>Taste.It Restaurant / <span>Project</span></h2>
-              <p>Website of a fictional restaurant for learning purposes.</p>
+              <h2>Taste.It Restaurant <span>/</span></h2>
+              <p data-i18n="projects.restaurantDesc"></p>
             </div>
           </a>
           <a
@@ -240,8 +264,8 @@ README /:
               />
             </div>
             <div class="content">
-              <h2>Peridote Studio / <span>Project</span></h2>
-              <p>My first professional website, developed for a client.</p>
+              <h2>Peridote Studio <span>/</span></h2>
+              <p data-i18n="projects.peridoteDesc"></p>
             </div>
           </a>
           <a
@@ -254,8 +278,8 @@ README /:
               <img src="assets/images/g1-01.png" alt="G1 News Clone Website" />
             </div>
             <div class="content">
-              <h2>G1 News Clone / <span>Project</span></h2>
-              <p>g1 website recreated for learning purposes</p>
+              <h2>G1 News Clone <span>/</span></h2>
+              <p data-i18n="projects.g1Desc"></p>
             </div>
           </a>
         </div>
@@ -285,12 +309,17 @@ README /:
 
       <section class="page skills">
         <div class="top-container">
-          <h1>How <span>I Work</span></h1>
-          <a href="#" class="action-btn"
-            >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
-          ></a>
+          <h1 data-i18n="skills.title"></h1>
+          <div class="action-btn-wrapper">
+            <a
+              href="assets/doc/Currículo-Thiago-Moslavacz"
+              download="Currículo-Thiago-Moslavacz"
+              class="action-btn"
+              data-i18n="home.downloadCv"
+            ></a>
+            <i class="bxr bx-arrow-in-right-square-half"></i>
+          </div>
         </div>
-
         <div class="skills-wrapper">
           <div class="deco-cpx"></div>
           <ol class="skills-list">
@@ -300,9 +329,9 @@ README /:
                 <h2>CSS/SASS</h2>
               </div>
               <ul>
-                <li>Responsive Layout</li>
-                <li>CSS Animations</li>
-                <li>Dark UI</li>
+                <li data-i18n="skills.css.0"></li>
+                <li data-i18n="skills.css.1"></li>
+                <li data-i18n="skills.css.2"></li>
               </ul>
             </li>
             <li>
@@ -311,9 +340,9 @@ README /:
                 <h2>JavaScript</h2>
               </div>
               <ul>
-                <li>DOM Manipulation</li>
-                <li>User Interactions</li>
-                <li>Logic & Conditions</li>
+                <li data-i18n="skills.js.0"></li>
+                <li data-i18n="skills.js.1"></li>
+                <li data-i18n="skills.js.2"></li>
               </ul>
             </li>
             <li>
@@ -322,19 +351,19 @@ README /:
                 <h2>HTML</h2>
               </div>
               <ul>
-                <li>Semantic Markup</li>
-                <li>SEO-Friendly Structure</li>
+                <li data-i18n="skills.html.0"></li>
+                <li data-i18n="skills.html.1"></li>
               </ul>
             </li>
             <li>
               <div class="title-wrapper">
                 <p>4 <span>.</span></p>
-                <h2>Tools</h2>
+                <h2 data-i18n="skills.toolsTitle"></h2>
               </div>
               <ul>
-                <li>VS Code</li>
-                <li>Git/GitHub</li>
-                <li>Figma</li>
+                <li data-i18n="skills.tools.0"></li>
+                <li data-i18n="skills.tools.1"></li>
+                <li data-i18n="skills.tools.2"></li>
               </ul>
             </li>
           </ol>
@@ -366,22 +395,27 @@ README /:
 
       <section class="page contact">
         <div class="top-container">
-          <h1><span>Get in</span> Touch</h1>
-          <a href="#" class="action-btn"
-            >Download CV <i class="bxr bx-arrow-in-right-square-half"></i
-          ></a>
+          <h1 data-i18n="contact.title"></h1>
+          <div class="action-btn-wrapper">
+            <a
+              href="assets/doc/Currículo-Thiago-Moslavacz"
+              download="Currículo-Thiago-Moslavacz"
+              class="action-btn"
+              data-i18n="home.downloadCv"
+            ></a>
+            <i class="bxr bx-arrow-in-right-square-half"></i>
+          </div>
         </div>
-        <h2 class="contact-text">
-          Have a <span>project in mind</span> or just want to say hi? <br />
-          I'm open to freelance work, collaborations, and new ideas.
-        </h2>
+        <h2 class="contact-text" data-i18n="contact.text"></h2>
         <div class="contact-links">
           <a
-            class="lets-talk"
+            class="lets-talk-wrapper"
             href="https://wa.me/5511991085388?text=Hi!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk.%20😉"
             target="_blank"
             rel="noopener"
-            ><i class="bxr bx-paper-plane"></i> Let's Talk
+          >
+            <i class="bxr bx-paper-plane"></i>
+            <span data-i18n="contact.letsTalk"></span>
           </a>
           <span>•</span>
           <a
@@ -396,21 +430,24 @@ README /:
             href="https://github.com/thiagomoslavacz"
             target="_blank"
             rel="noopener"
-            ><i class="ri-github-fill"></i> GitHub
+          >
+            <i class="ri-github-fill"></i> GitHub
           </a>
           <span>•</span>
           <a
             href="https://www.linkedin.com/in/thiagomoslavacz"
             target="_blank"
             rel="noopener"
-            ><i class="ri-linkedin-box-fill"></i> LinkedIn
+          >
+            <i class="ri-linkedin-box-fill"></i> LinkedIn
           </a>
         </div>
-        <p class="copyright">© 2025 Thiago Moslavacz. All rights reserved.</p>
+        <p class="copyright" data-i18n="contact.copyright"></p>
       </section>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js/script.js" defer></script>
   </body>
 </html>
