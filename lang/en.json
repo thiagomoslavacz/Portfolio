@@ -12,6 +12,10 @@
 
   "home": {
     "titleLine1": "Yes, I <span>code</span> and",
+    "skill1": "build stuff!",
+    "skill2": "craft ideas!",
+    "skill3": "break the pattern!",
+    "skill4": "forget to sleep...",
     "subtitle": "No, I'm not fixing your printer.",
     "downloadCv": "Download CV",
     "completedProjects": "Completed Projects",

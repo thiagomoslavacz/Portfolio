@@ -1,12 +1,7 @@
 console.log("Hello World!");
 
 const typed = new Typed("#typed", {
-  strings: [
-    "build stuff!",
-    "craft ideas!",
-    "break the pattern!",
-    "forget to sleep...",
-  ],
+  stringsElement: '#typed-strings',
   typeSpeed: 50,
   backSpeed: 40,
   loop: true,
