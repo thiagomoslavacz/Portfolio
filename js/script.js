@@ -1,10 +1,34 @@
 console.log("Hello World!");
 
-const typed = new Typed("#typed", {
-  stringsElement: '#typed-strings',
-  typeSpeed: 50,
-  backSpeed: 40,
-  loop: true,
+let typedInstance = null;
+
+function initTyped() {
+  const stringsEl = document.querySelector("#typed-strings");
+  const typedTarget = document.querySelector("#typed");
+
+  if (!stringsEl || !typedTarget) return;
+
+  if (typedInstance) {
+    typedInstance.destroy();
+    typedInstance = null;
+  }
+
+  typedTarget.textContent = "";
+
+  typedInstance = new Typed("#typed", {
+    stringsElement: "#typed-strings",
+    typeSpeed: 50,
+    backSpeed: 40,
+    loop: true,
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initTyped);
+
+document.addEventListener("languageChanged", () => {
+  if (location.hash === "#home" || location.hash === "") {
+    initTyped();
+  }
 });
 
 const icons = document.querySelectorAll(".icon-wrapper");
@@ -28,8 +52,6 @@ function openPage(target) {
   if (location.hash !== `#${target}`) {
     location.hash = target;
   }
-
-  target === "home" ? typed?.start() : typed?.stop();
 }
 
 icons.forEach((icon) => {
