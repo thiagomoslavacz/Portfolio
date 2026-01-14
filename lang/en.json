@@ -57,7 +57,8 @@
   "contact": {
     "title": "<span>Get in</span> Touch",
     "letsTalk": "Let's Talk",
-    "text": "Have a <span>project in mind</span> or just want to say hi?<br>I'm open to freelance work, collaborations, and new ideas.",
+    "text1": "Have a <span>project in mind</span> or just want to say hi?",
+    "text2": "I'm open to freelance work, collaborations, and new ideas.",
     "copyright": "© Thiago Moslavacz. All rights reserved."
   }
 }
