@@ -12,6 +12,10 @@
 
   "home": {
     "titleLine1": "Sim, eu <span>programo</span> e",
+    "skill1": "construo coisas!",
+    "skill2": "crio idéias!",
+    "skill3": "quebro o padrão!",
+    "skill4": "esqueço de dormir...",
     "subtitle": "Não, eu não vou consertar sua impressora.",
     "downloadCv": "Baixar CV",
     "completedProjects": "Projetos Concluídos",
@@ -53,7 +57,8 @@
   "contact": {
     "title": "<span>Entre em</span> Contato",
     "letsTalk": "Vamos Conversar",
-    "text": "Tem um <span>projeto em mente</span> ou só quer dizer oi?<br>Estou aberto a freelas, colaborações e novas ideias.",
+    "text1": "Tem um <span>projeto em mente</span> ou só quer dizer oi?",
+    "text2": "Estou aberto a freelas, colaborações e novas ideias.",
     "copyright": "© 2025 Thiago Moslavacz. Todos os direitos reservados."
   }
 }
