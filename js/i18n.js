@@ -24,6 +24,7 @@ async function loadLanguage(lang) {
     currentLang = lang;
 
     updateLangButton();
+    document.dispatchEvent(new CustomEvent("languageChanged"));
   } catch (err) {
     console.error("Erro ao carregar idioma:", err);
   }
