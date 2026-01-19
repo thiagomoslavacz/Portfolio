@@ -30,7 +30,8 @@ body {
   z-index: 1000;
 
   .lang-switch {
-    width: 80px;
+    width: 100%;
+    white-space: nowrap;
     position: relative;
 
     button {
