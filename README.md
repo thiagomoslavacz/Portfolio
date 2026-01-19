@@ -11,4 +11,4 @@ O portfólio também representa minha evolução na área: cada seção, detalhe
 - CSS / Sass  
 - JavaScript  
 
-🔗 **[> Acesse o portfolio](https://thiagomoslavacz.vercel.app)**
+🔗 **[> Acesse o portfólio](https://thiagomoslavacz.vercel.app)**
