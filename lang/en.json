@@ -51,7 +51,7 @@
     "js": ["DOM Manipulation", "User Interactions", "Logic & Conditions"],
     "html": ["Semantic Markup", "SEO-Friendly Structure"],
     "toolsTitle": "Tools",
-    "tools": ["VS Code", "Git & GitHub", "Figma"]
+    "tools": ["VS Code", "Git/GitHub", "Figma"]
   },
 
   "contact": {
