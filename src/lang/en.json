@@ -1,0 +1,79 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+
+  "bio": {
+    "status": "Online"
+  },
+
+  "home": {
+    "titleLine1": "Yes, I <span>code</span> and",
+    "skill1": "build stuff!",
+    "skill2": "craft ideas!",
+    "skill3": "break the pattern!",
+    "skill4": "forget to sleep...",
+    "subtitle": "No, I'm not fixing your printer.",
+    "downloadCv": "Download CV",
+    "completedProjects": "Completed Projects",
+    "years": "Years",
+    "studying": "Studying and practicing"
+  },
+
+  "about": {
+    "title": "A little about who I am",
+    "text": "Hey! I'm <span>Thiago Moslavacz</span>, a Front-End Developer. I build modern, user-focused interfaces with React and TypeScript. But among so many developers out there, why choose me?...",
+    "letsTalk": "Let's Talk"
+  },
+
+  "timeline": {
+    "title": "Timeline",
+    "status": "In progress",
+    "text": "Academic and professional experiences coming soon. Currently focused on projects and continuous growth."
+  },
+
+  "projects": {
+    "title": "Featured <span>Projects</span>",
+    "underConstruction": "Under <span>Construction</span>",
+    "underConstructionText": "Stronger projects are on the way. Meanwhile, the code speaks for itself."
+  },
+
+  "skills": {
+    "title": "How <span>I Work</span>",
+    "webTitle": "Web Development",
+    "web": [
+      "Semantic HTML and SEO",
+      "CSS, SASS and Tailwind",
+      "JavaScript and interface logic"
+    ],
+    "tsTitle": "TypeScript",
+    "ts": ["Typed TypeScript", "Data manipulation", "Async / Await"],
+    "reactTitle": "React / Vite",
+    "react": ["Reusable components", "Hooks & state", "Vite as bundler"],
+    "toolsTitle": "Tools",
+    "tools": ["VS Code + Cursor", "Git / GitHub", "Figma"],
+    "aiTitle": "Artificial Intelligence",
+    "aiTitle2": "AI in Practice",
+    "ai1": [
+      "Claude, and AI-native workflows",
+      "Agents, and context engineering",
+      "Prompts as part of the workflow"
+    ],
+    "ai2": [
+      "Fine-tuning, embeddings, and context",
+      "RAG and real workflow automation",
+      "Tokens, context windows, and inference matter"
+    ]
+  },
+
+  "contact": {
+    "title": "<span>Get in</span> Touch",
+    "letsTalk": "Let's Talk",
+    "text1": "Have a <span>project in mind</span> or just want to say hi?",
+    "text2": "I'm open to freelance work, collaborations, and new ideas.",
+    "copyright": "© Thiago Moslavacz. All rights reserved."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "sidebar": {
+    "home": "Início",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato"
+  },
+
+  "bio": {
+    "status": "Online"
+  },
+
+  "home": {
+    "titleLine1": "Sim, eu <span>programo</span> e",
+    "skill1": "construo coisas!",
+    "skill2": "crio ideias!",
+    "skill3": "quebro o padrão!",
+    "skill4": "esqueço de dormir...",
+    "subtitle": "Não, eu não vou consertar sua impressora.",
+    "downloadCv": "Baixar CV",
+    "completedProjects": "Projetos Concluídos",
+    "years": "Anos",
+    "studying": "Estudando e praticando"
+  },
+
+  "about": {
+    "title": "Um pouco sobre mim",
+    "text": "E aí! Sou <span>Thiago Moslavacz</span>, desenvolvedor Front-End. Transformo ideias em interfaces modernas com React e TypeScript. Mas, entre tantos desenvolvedores, por que escolher eu?...",
+    "letsTalk": "Vamos conversar"
+  },
+
+  "timeline": {
+    "title": "Linha do Tempo",
+    "status": "Em progresso",
+    "text": "Experiências acadêmicas e profissionais em breve. Atualmente focado em projetos e crescimento contínuo."
+  },
+
+  "projects": {
+    "title": "Projetos em <span>Destaque</span>",
+    "underConstruction": "Em <span>Construção</span>",
+    "underConstructionText": "Projetos mais sólidos estão a caminho. Enquanto isso, o código fala por si."
+  },
+
+  "skills": {
+    "title": "Como <span>Eu Trabalho</span>",
+    "webTitle": "Desenvolvimento Web",
+    "web": [
+      "HTML semântico e SEO",
+      "CSS, SASS e Tailwind",
+      "JavaScript e lógica de interface"
+    ],
+    "tsTitle": "TypeScript",
+    "ts": ["TypeScript tipado", "Manipulação de dados", "Async / Await"],
+    "reactTitle": "React / Vite",
+    "react": [
+      "Componentes reutilizáveis",
+      "Hooks e estado",
+      "Vite como bundler"
+    ],
+    "toolsTitle": "Ferramentas",
+    "tools": ["VS Code + Cursor", "Git / GitHub", "Figma"],
+
+    "aiTitle": "Inteligência Artificial",
+    "aiTitle2": "IA na Prática",
+    "ai1": [
+      "Claude e fluxos AI-native",
+      "Agentes e engenharia de contexto",
+      "Prompts como parte do fluxo"
+    ],
+    "ai2": [
+      "Fine-tuning, embeddings e contexto",
+      "RAG e automação real",
+      "Tokens, context windows e inferência"
+    ]
+  },
+
+  "contact": {
+    "title": "<span>Entre em</span> Contato",
+    "letsTalk": "Vamos Conversar",
+    "text1": "Tem um <span>projeto em mente</span> ou só quer dizer oi?",
+    "text2": "Estou aberto a freelas, colaborações e novas ideias.",
+    "copyright": "© 2025 Thiago Moslavacz. Todos os direitos reservados."
+  }
+}
